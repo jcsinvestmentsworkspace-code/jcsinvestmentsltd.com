@@ -30,6 +30,7 @@ export default function Footer() {
             {[
               { label: "in", href: "https://www.linkedin.com/company/jcs-investments-limited/", title: "LinkedIn" },
               { label: "ig", href: "https://www.instagram.com/jcsinvestments_official/", title: "Instagram" },
+              { label: "fb", href: "https://web.facebook.com/JcsInvestments", title: "Facebook" },
               { label: "✉", href: "mailto:jcsinvestmentsworkspace@gmail.com", title: "Email" },
             ].map(s => (
               <a key={s.label} href={s.href} target={s.href.startsWith("http") ? "_blank" : undefined}
@@ -92,11 +93,80 @@ export default function Footer() {
         <div>
           <h4 style={{ fontSize: "0.68rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--g)", fontWeight: 600, marginBottom: "1.4rem" }}>Contact</h4>
           <a href="tel:+233541580247" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)", textDecoration: "none" }}>+233 54 158 0247</a>
-          <a href="mailto:jcsinvestmentsworkspace@gmail.com" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.82rem", color: "var(--muted)", textDecoration: "none", wordBreak: "break-word" }}>jcsinvestmentsworkspace@gmail.com</a>
+       <a
+  href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
+  style={{
+    display: "block",
+    padding: "0.4rem 0",
+    fontSize: "0.82rem",
+    color: "var(--muted)",
+    textDecoration: "none",
+    wordBreak: "break-word"
+  }}
+>
+  jcsinvestmentsworkspace@gmail.com
+</a>
+
+<a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=jcsinvestmentsworkspace@gmail.com&su=Inquiry%20from%20JCS%20Website"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "block",
+    fontSize: "0.8rem",
+    color: "#C9A24D",
+    marginTop: "6px",
+    textDecoration: "underline",
+    fontWeight: 600
+  }}
+>
+  Having trouble? Open in Gmail →
+</a>
           <span style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)" }}>Accra, Ghana</span>
-          <a href="https://www.linkedin.com/company/jcs-investments-limited/" target="_blank" rel="noopener noreferrer" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)", textDecoration: "none" }}>LinkedIn</a>
-          <a href="https://www.instagram.com/jcsinvestments_official/" target="_blank" rel="noopener noreferrer" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)", textDecoration: "none" }}>Instagram</a>
-          <Link href="/contact" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--g)", textDecoration: "none", fontWeight: 600 }}>Contact Page →</Link>
+          <a
+  href="https://www.linkedin.com/company/jcs-investments-limited/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "block",
+    padding: "0.4rem 0",
+    fontSize: "0.85rem",
+    color: "var(--muted)",
+    textDecoration: "none"
+  }}
+>
+  LinkedIn
+</a>
+
+<a
+  href="https://www.instagram.com/jcsinvestments_official/"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "block",
+    padding: "0.4rem 0",
+    fontSize: "0.85rem",
+    color: "var(--muted)",
+    textDecoration: "none"
+  }}
+>
+  Instagram
+</a>
+
+<a
+  href="https://web.facebook.com/JcsInvestments"
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "block",
+    padding: "0.4rem 0",
+    fontSize: "0.85rem",
+    color: "var(--muted)",
+    textDecoration: "none"
+  }}
+>
+  Facebook
+</a>          <Link href="/contact" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--g)", textDecoration: "none", fontWeight: 600 }}>Contact Page →</Link>
         </div>
       </div>
 

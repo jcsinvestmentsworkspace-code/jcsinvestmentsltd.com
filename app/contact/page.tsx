@@ -131,29 +131,139 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 
       {/* CONTACT CARDS */}
       <section className="section-pad" style={{ background:"var(--dark2)" }}>
-        <div className="container">
-          <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:"1rem", marginBottom:"5rem" }}>
-            {[
-              { icon:"📞", label:"Call Us", value:"+233 54 158 0247", sub:"Mon–Fri · 8am–6pm GMT", href:"tel:+233541580247", color:GREEN },
-              { icon:"✉️", label:"Email Us", value:"jcsinvestmentsworkspace@gmail.com", sub:"We reply within 24 hours", href:"mailto:jcsinvestmentsworkspace@gmail.com", color:GOLD },
-              { icon:"📍", label:"Visit Us", value:"JCS Investments Limited", sub:"Accra, Ghana", href:"#map", color:GREEN },
-              { icon:"🔗", label:"Follow Us", value:"LinkedIn & Instagram", sub:"@jcsinvestments_official", href:"https://www.linkedin.com/company/jcs-investments-limited/", color:GOLD },
-            ].map((card, i) => (
-              <FadeUp key={card.label} delay={i*80}>
-                <a href={card.href} target={card.href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer"
-                  style={{ display:"block", padding:"1.8rem", border:`1px solid ${card.color}25`, borderRadius:16, textDecoration:"none", background:`${card.color}08`, transition:"transform .3s, box-shadow .3s, border-color .3s" }}
-                  onMouseEnter={e=>{ const el=e.currentTarget as HTMLElement; el.style.transform="translateY(-6px)"; el.style.boxShadow=`0 20px 48px rgba(0,0,0,0.4)`; el.style.borderColor=card.color; }}
-                  onMouseLeave={e=>{ const el=e.currentTarget as HTMLElement; el.style.transform="translateY(0)"; el.style.boxShadow="none"; el.style.borderColor=`${card.color}25`; }}
-                >
-                  <div style={{ fontSize:"1.6rem", marginBottom:"0.8rem" }}>{card.icon}</div>
-                  <div style={{ fontSize:"0.65rem", fontWeight:700, letterSpacing:"0.2em", textTransform:"uppercase", color:card.color, marginBottom:"0.5rem" }}>{card.label}</div>
-                  <div style={{ fontWeight:600, fontSize:"0.9rem", color:"#fff", marginBottom:"0.3rem", wordBreak:"break-word" }}>{card.value}</div>
-                  <div style={{ fontSize:"0.75rem", color:"var(--muted)" }}>{card.sub}</div>
-                </a>
-              </FadeUp>
-            ))}
-          </div>
+  <div className="container">
+      <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:"1rem", marginBottom:"5rem" }}>
 
+  {[
+    { icon:"📞", label:"Call Us", value:"+233 54 158 0247", sub:"Mon–Fri · 8am–6pm GMT", href:"tel:+233541580247", color:GREEN },
+    { icon:"📍", label:"Visit Us", value:"JCS Investments Limited", sub:"Accra, Ghana", href:"#map", color:GREEN },
+   {
+  icon:"💼",
+  label:"LinkedIn",
+  value:"JCS Investments",
+  sub:"Connect professionally",
+  href:"https://www.linkedin.com/company/jcs-investments-limited/",
+  color:GOLD
+},
+{
+  icon:"📸",
+  label:"Instagram",
+  value:"@jcsinvestments_official",
+  sub:"See our updates",
+  href:"https://instagram.com/jcsinvestments_official",
+  color:GOLD
+},
+{
+  icon:"📘",
+  label:"Facebook",
+  value:"JCS Investments",
+  sub:"Follow us for news",
+  href:"https://web.facebook.com/JcsInvestments",
+  color:GOLD
+},
+  ].map((card, i) => (
+    <FadeUp key={card.label} delay={i*80}>
+      <a
+        href={card.href}
+        target={card.href.startsWith("http") ? "_blank" : undefined}
+        rel="noopener noreferrer"
+        style={{
+          display:"block",
+          padding:"1.8rem",
+          border:`1px solid ${card.color}25`,
+          borderRadius:16,
+          textDecoration:"none",
+          background:`${card.color}08`,
+          transition:"transform .3s, box-shadow .3s, border-color .3s"
+        }}
+        onMouseEnter={e=>{
+          const el=e.currentTarget as HTMLElement;
+          el.style.transform="translateY(-6px)";
+          el.style.boxShadow=`0 20px 48px rgba(0,0,0,0.4)`;
+          el.style.borderColor=card.color;
+        }}
+        onMouseLeave={e=>{
+          const el=e.currentTarget as HTMLElement;
+          el.style.transform="translateY(0)";
+          el.style.boxShadow="none";
+          el.style.borderColor=`${card.color}25`;
+        }}
+      >
+        <div style={{ fontSize:"1.6rem", marginBottom:"0.8rem" }}>{card.icon}</div>
+        <div style={{ fontSize:"0.65rem", fontWeight:700, letterSpacing:"0.2em", textTransform:"uppercase", color:card.color, marginBottom:"0.5rem" }}>
+          {card.label}
+        </div>
+        <div style={{ fontWeight:600, fontSize:"0.9rem", color:"#fff", marginBottom:"0.3rem", wordBreak:"break-word" }}>
+          {card.value}
+        </div>
+        <div style={{ fontSize:"0.75rem", color:"var(--muted)" }}>
+          {card.sub}
+        </div>
+      </a>
+    </FadeUp>
+  ))}
+
+  {/* ✅ EMAIL CARD (MANUAL) */}
+  <FadeUp delay={240}>
+    <div
+      style={{
+        display:"block",
+        padding:"1.8rem",
+        border:`1px solid ${GOLD}25`,
+        borderRadius:16,
+        background:`${GOLD}08`,
+      }}
+    >
+      <div style={{ fontSize:"1.6rem", marginBottom:"0.8rem" }}>✉️</div>
+
+      <div style={{
+        fontSize:"0.65rem",
+        fontWeight:700,
+        letterSpacing:"0.2em",
+        textTransform:"uppercase",
+        color:GOLD,
+        marginBottom:"0.5rem"
+      }}>
+        Email Us
+      </div>
+
+      <a
+        href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
+        style={{
+          display:"block",
+          fontWeight:600,
+          fontSize:"0.9rem",
+          color:"#fff",
+          marginBottom:"0.3rem",
+          wordBreak:"break-word",
+          textDecoration:"none"
+        }}
+      >
+        jcsinvestmentsworkspace@gmail.com
+      </a>
+
+      <div style={{ fontSize:"0.75rem", color:"var(--muted)" }}>
+        We reply within 24 hours
+      </div>
+
+      <a
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=jcsinvestmentsworkspace@gmail.com&su=Inquiry%20from%20JCS%20Website"
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          display:"inline-block",
+          marginTop:"0.7rem",
+          fontSize:"0.75rem",
+          color:GOLD,
+          textDecoration:"underline"
+        }}
+      >
+        Having trouble? Open in Gmail →
+      </a>
+    </div>
+  </FadeUp>
+
+</div>
           {/* FORM + SIDEBAR */}
           <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(280px,1fr))", gap:"3rem", alignItems:"start" }}>
 
@@ -206,6 +316,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                   <div style={{ display:"flex", flexDirection:"column", gap:"0.8rem" }}>
                     {[
                       { name:"LinkedIn", handle:"JCS Investments Limited", href:"https://www.linkedin.com/company/jcs-investments-limited/", color:"#0A66C2", icon:"in" },
+                       { name:"FaceBook", handle:"JCS Investments Limited", href:"https://web.facebook.com/JcsInvestments", color:"#1f771c", icon:"in" },
                       { name:"Instagram", handle:"@jcsinvestments_official", href:"https://www.instagram.com/jcsinvestments_official/", color:"#E1306C", icon:"ig" },
                     ].map(s => (
                       <a key={s.name} href={s.href} target="_blank" rel="noopener noreferrer"
@@ -342,10 +453,39 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             <p style={{ color:"var(--muted)", marginBottom:"2.2rem", lineHeight:1.75, fontSize:"1rem" }}>
               Join hundreds of investors who trust JCS Investments to grow their wealth — sustainably and strategically.
             </p>
-            <div style={{ display:"flex", flexWrap:"wrap", gap:"1rem", justifyContent:"center" }}>
-              <a href="tel:+233541580247" className="btn-primary" style={{ fontSize:"0.9rem" }}>📞 Call +233 54 158 0247</a>
-              <a href="mailto:jcsinvestmentsworkspace@gmail.com" className="btn-outline" style={{ fontSize:"0.9rem" }}>✉️ Send an Email</a>
-            </div>
+            <div style={{ display:"flex", flexWrap:"wrap", gap:"1rem", justifyContent:"center", alignItems:"flex-start" }}>
+  
+  <a href="tel:+233541580247" className="btn-primary" style={{ fontSize:"0.9rem" }}>
+    📞 Call +233 54 158 0247
+  </a>
+
+  <div style={{ display:"flex", flexDirection:"column", alignItems:"center" }}>
+    
+    <a
+      href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
+      className="btn-outline"
+      style={{ fontSize:"0.9rem" }}
+    >
+      ✉️ Send an Email
+    </a>
+
+    <a
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=jcsinvestmentsworkspace@gmail.com&su=Inquiry%20from%20JCS%20Website"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        marginTop:"6px",
+        fontSize:"0.75rem",
+        color:"#1F7A5A",
+        textDecoration:"underline"
+      }}
+    >
+      Having trouble? Open in Gmail →
+    </a>
+
+  </div>
+
+</div>
           </FadeUp>
         </div>
       </section>

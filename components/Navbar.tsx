@@ -2,6 +2,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const NAV = [
   {
@@ -113,12 +114,13 @@ export default function Navbar() {
       >
         {/* LOGO */}
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
-          <div style={{
-            width: 40, height: 40, background: "var(--g)", borderRadius: 10,
-            display: "flex", alignItems: "center", justifyContent: "center",
-            fontFamily: "var(--font-display)", fontSize: "1.3rem", fontWeight: 700, color: "#fff",
-            flexShrink: 0,
-          }}>J</div>
+          <Image
+  src="/images/JCS-logo.jpg"
+  alt="JCS Investments Logo"
+  width={40}
+  height={40}
+  style={{ borderRadius: 8, objectFit: "contain" }}
+/>
           <div style={{ fontFamily: "var(--font-display)", lineHeight: 1.15 }}>
             <div style={{ fontSize: "1.05rem", fontWeight: 600, color: "#fff" }}>JCS Investments</div>
             <div style={{ fontSize: "0.6rem", fontWeight: 400, color: "var(--muted)", fontFamily: "var(--font-body)", letterSpacing: "0.12em", textTransform: "uppercase" }}>Limited · Accra, Ghana</div>
