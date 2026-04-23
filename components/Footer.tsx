@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Contact */}
         <div>
           <h4 style={{ fontSize: "0.68rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--g)", fontWeight: 600, marginBottom: "1.4rem" }}>Contact</h4>
-          <a href="tel:+233541580247" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)", textDecoration: "none" }}>+233 54 158 0247</a>
+          <a href="tel:+233 302 960550" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)", textDecoration: "none" }}>+233 302 960550</a>
        <a
   href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
   style={{

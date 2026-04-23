@@ -109,7 +109,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           <FadeUp delay={300}>
             <div style={{ display:"flex", flexWrap:"wrap", gap:"0.8rem" }}>
               {[
-                { label:"Call Now", href:"tel:+233541580247" },
+                { label:"Call Now", href:"mobile: +233 554 458971" },
+                { label:"Call Now", href:"tel:+233 302 960550" },
                 { label:"Send Email", href:"mailto:jcsinvestmentsworkspace@gmail.com" },
                 { label:"Get Directions", href:"#map" },
               ].map(b => (
@@ -135,7 +136,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(220px,1fr))", gap:"1rem", marginBottom:"5rem" }}>
 
   {[
-    { icon:"📞", label:"Call Us", value:"+233 54 158 0247", sub:"Mon–Fri · 8am–6pm GMT", href:"tel:+233541580247", color:GREEN },
+    { icon:"📞", label:"Call Us", value:"+233 302 960550", sub:"Mon–Fri · 8am–6pm GMT", href:"tel:+233 302 960550", color:GREEN },
     { icon:"📍", label:"Visit Us", value:"JCS Investments Limited", sub:"Accra, Ghana", href:"#map", color:GREEN },
    {
   icon:"💼",
@@ -279,7 +280,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     <p style={{ fontSize:"0.85rem", color:"var(--muted)", lineHeight:1.7, marginBottom:"1.5rem" }}>Our seasoned team is ready to build a strategy tailored to your goals — from first-time investors to established institutions.</p>
                     <div style={{ display:"flex", flexDirection:"column", gap:"1rem" }}>
                       {[
-                        { icon:"📞", text:"+233 54 158 0247", href:"tel:+233541580247" },
+                        { icon:"📞", text:"+233 302 960550", href:"+233 302 960550" },
                         { icon:"✉️", text:"jcsinvestmentsworkspace@gmail.com", href:"mailto:jcsinvestmentsworkspace@gmail.com" },
                         { icon:"📍", text:"Accra, Ghana", href:"#map" },
                       ].map(item => (
@@ -434,7 +435,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               <a href="https://www.google.com/maps/place/JCS+Investments+Limited/@5.6285195,-0.148397,17z" target="_blank" rel="noopener noreferrer" className="btn-primary">
                 📍 Open in Google Maps
               </a>
-              <a href="tel:+233541580247" className="btn-outline">📞 Call for Directions</a>
+              <a href="tel:+233 302 960550" className="btn-outline">📞 Call for Directions</a>
             </div>
           </FadeUp>
         </div>
@@ -455,8 +456,8 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
             </p>
             <div style={{ display:"flex", flexWrap:"wrap", gap:"1rem", justifyContent:"center", alignItems:"flex-start" }}>
   
-  <a href="tel:+233541580247" className="btn-primary" style={{ fontSize:"0.9rem" }}>
-    📞 Call +233 54 158 0247
+  <a href="tel:+233 302 960550" className="btn-primary" style={{ fontSize:"0.9rem" }}>
+    📞 Call +233 302 960550
   </a>
 
   <div style={{ display:"flex", flexDirection:"column", alignItems:"center" }}>
