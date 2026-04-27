@@ -11,15 +11,10 @@ const LEADERSHIP = [
     bio:"Patricia founded JCS Investments in 2004 with a conviction that Africa's greatest resource is its untapped investment potential. With 25 years of experience spanning investment banking, development finance, and entrepreneurship, he leads the firm's overall strategy and vision.",
     quote:"We invest not just for returns, but for the Africa we want to leave behind.",
   },
-   {
-    name:"Pedro Velazquez", role:"Chief Financial Officer",
-    img:"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80&auto=format",
-    bio:"Karim leads JCS's renewable energy and infrastructure investment practice. With a background in engineering and project finance, he has structured and delivered over 20 clean energy projects across Ghana, Senegal, and Côte d'Ivoire.",
-    quote:"Clean energy is the single greatest investment opportunity in Africa today.",
-  },
+   
    {
     name:"Mr.Karim Kwara", role:"Head of Energy & Infrastructure",
-    img:"https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=500&q=80&auto=format",
+    img:"/images/Karim.jpeg",
     bio:"Karim leads JCS's renewable energy and infrastructure investment practice. With a background in engineering and project finance, he has structured and delivered over 20 clean energy projects across Ghana, Senegal, and Côte d'Ivoire.",
     quote:"Clean energy is the single greatest investment opportunity in Africa today.",
   },
@@ -44,7 +39,7 @@ const LEADERSHIP = [
   },
   {
     name:"Mr.William Hunt", role:"Head of Technology Investments",
-    img:"https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=500&q=80&auto=format",
+    img:"/images/William.jpeg",
     bio:"William leads JCS's technology and innovation investment practice. A former entrepreneur and software engineer, he has co-founded three technology companies and advised over 40 African startups on strategy and fundraising.",
     quote:"Africa's tech ecosystem is the most exciting investment frontier on the planet right now.",
   },

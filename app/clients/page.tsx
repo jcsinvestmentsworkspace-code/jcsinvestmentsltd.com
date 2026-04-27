@@ -7,7 +7,7 @@ import Link from "next/link";
 const TABS = [
   {
     id:"institutional", label:"Institutional Investors",
-    img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80&auto=format",
+    img:"/images/RenewableEnergy.jpg",
     title:"Pension Funds, Endowments & Sovereign Wealth",
     desc:"We structure bespoke investment mandates for institutions seeking superior risk-adjusted returns across Africa's emerging markets. Our disciplined approach ensures capital preservation alongside long-term growth.",
     features:[
@@ -19,7 +19,7 @@ const TABS = [
   },
   {
     id:"family", label:"Family Offices",
-    img:"https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80&auto=format",
+    img:"/images/mobilemoney.png",
     title:"Multigenerational Wealth Preservation",
     desc:"We help family offices build resilient, diversified portfolios that balance growth with protection — securing wealth for generations to come across private and alternative markets.",
     features:[
