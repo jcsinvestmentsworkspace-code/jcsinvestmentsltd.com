@@ -31,7 +31,7 @@ export default function Footer() {
               { label: "in", href: "https://www.linkedin.com/company/jcs-investments-limited/", title: "LinkedIn" },
               { label: "ig", href: "https://www.instagram.com/jcsinvestments_official/", title: "Instagram" },
               { label: "fb", href: "https://web.facebook.com/JcsInvestments", title: "Facebook" },
-              { label: "✉", href: "mailto:jcsinvestmentsworkspace@gmail.com", title: "Email" },
+              { label: "✉", href: "mailto:info@jcs.com.gh", title: "Email" },
             ].map(s => (
               <a key={s.label} href={s.href} target={s.href.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer" title={s.title}
@@ -94,7 +94,7 @@ export default function Footer() {
           <h4 style={{ fontSize: "0.68rem", letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--g)", fontWeight: 600, marginBottom: "1.4rem" }}>Contact</h4>
           <a href="tel:+233 302 960550" style={{ display: "block", padding: "0.4rem 0", fontSize: "0.85rem", color: "var(--muted)", textDecoration: "none" }}>+233 302 960550</a>
        <a
-  href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
+  href="mailto:info@jcs.com.gh?subject=Inquiry from JCS Website"
   style={{
     display: "block",
     padding: "0.4rem 0",
@@ -104,11 +104,11 @@ export default function Footer() {
     wordBreak: "break-word"
   }}
 >
-  jcsinvestmentsworkspace@gmail.com
+  info@jcs.com.gh
 </a>
 
 <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to=jcsinvestmentsworkspace@gmail.com&su=Inquiry%20from%20JCS%20Website"
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=info@jcs.com.gh&su=Inquiry%20from%20JCS%20Website"
   target="_blank"
   rel="noopener noreferrer"
   style={{

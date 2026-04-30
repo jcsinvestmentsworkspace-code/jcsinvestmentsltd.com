@@ -2,7 +2,7 @@
 import { useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
- import emailjs from "@emailjs/browser";
+ //import emailjs from "@emailjs/browser";
 import FadeUp from "@/components/FadeUp";
 
 const GREEN = "#1F7A5A";
@@ -62,20 +62,34 @@ export default function ContactPage() {
 const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
 
-  const form = e.currentTarget;
+ const formEl = e.currentTarget;
+const formData = new FormData(formEl);
+
+  formData.append(
+    "access_key",
+    process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""
+  );
+
+  formData.append("subject", "New JCS Website Inquiry");
 
   try {
-    await emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      form,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-    );
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-    alert("Message sent successfully ✅");
-    form.reset();
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Message sent successfully ✅");
+      formEl.reset();
+      setForm({ name: "", email: "", phone: "", subject: "", message: "" });
+    } else {
+      console.error("Web3Forms error:", result);
+      alert("Failed to send message ❌");
+    }
   } catch (error) {
-    console.error("EmailJS error:", error);
+    console.error("Web3Forms error:", error);
     alert("Failed to send message ❌");
   }
 };
@@ -111,7 +125,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
               {[
                 { label:"Call Now", href:"mobile: +233 554 458971" },
                 { label:"Call Now", href:"tel:+233 302 960550" },
-                { label:"Send Email", href:"mailto:jcsinvestmentsworkspace@gmail.com" },
+                { label:"Send Email", href:"mailto:info@jcs.com.gh" },
                 { label:"Get Directions", href:"#map" },
               ].map(b => (
                 <a key={b.label} href={b.href} style={{
@@ -229,7 +243,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       </div>
 
       <a
-        href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
+        href="mailto:info@jcs.com.gh?subject=Inquiry from JCS Website"
         style={{
           display:"block",
           fontWeight:600,
@@ -240,7 +254,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
           textDecoration:"none"
         }}
       >
-        jcsinvestmentsworkspace@gmail.com
+        info@jcs.com.gh
       </a>
 
       <div style={{ fontSize:"0.75rem", color:"var(--muted)" }}>
@@ -248,7 +262,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
       </div>
 
       <a
-        href="https://mail.google.com/mail/?view=cm&fs=1&to=jcsinvestmentsworkspace@gmail.com&su=Inquiry%20from%20JCS%20Website"
+        href="https://mail.google.com/mail/?view=cm&fs=1&to=info@jcs.com.gh&su=Inquiry%20from%20JCS%20Website"
         target="_blank"
         rel="noopener noreferrer"
         style={{
@@ -281,7 +295,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
                     <div style={{ display:"flex", flexDirection:"column", gap:"1rem" }}>
                       {[
                         { icon:"📞", text:"+233 302 960550", href:"+233 302 960550" },
-                        { icon:"✉️", text:"jcsinvestmentsworkspace@gmail.com", href:"mailto:jcsinvestmentsworkspace@gmail.com" },
+                        { icon:"✉️", text:"info@jcs.com.gh", href:"mailto:info@jcs.com.gh" },
                         { icon:"📍", text:"Accra, Ghana", href:"#map" },
                       ].map(item => (
                         <a key={item.text} href={item.href} style={{ display:"flex", alignItems:"flex-start", gap:10, color:"rgba(255,255,255,0.75)", fontSize:"0.83rem", textDecoration:"none", transition:"color .2s" }}
@@ -463,7 +477,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   <div style={{ display:"flex", flexDirection:"column", alignItems:"center" }}>
     
     <a
-      href="mailto:jcsinvestmentsworkspace@gmail.com?subject=Inquiry from JCS Website"
+      href="mailto:info@jcs.com.gh?subject=Inquiry from JCS Website"
       className="btn-outline"
       style={{ fontSize:"0.9rem" }}
     >
@@ -471,7 +485,7 @@ const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     </a>
 
     <a
-      href="https://mail.google.com/mail/?view=cm&fs=1&to=jcsinvestmentsworkspace@gmail.com&su=Inquiry%20from%20JCS%20Website"
+      href="https://mail.google.com/mail/?view=cm&fs=1&to=info@jcs.com.gh&su=Inquiry%20from%20JCS%20Website"
       target="_blank"
       rel="noopener noreferrer"
       style={{

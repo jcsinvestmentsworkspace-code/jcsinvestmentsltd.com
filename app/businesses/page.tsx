@@ -24,7 +24,7 @@ const BUSINESSES = [
     num:"03", tag:"Advisory",
     title:"Financial Advisory",
     href:"/businesses/financial-advisory",
-    img:"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80&auto=format",
+    img:"/images/financial-advisory.jpg",
     desc:"Strategic investment counsel, portfolio optimisation, and market intelligence for institutions, family offices, and high net-worth individuals across Africa.",
   },
   {
@@ -38,7 +38,7 @@ const BUSINESSES = [
     num:"05", tag:"Finance",
     title:"Project Financing",
     href:"/businesses/project-financing",
-    img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&auto=format",
+    img:"/images/project-finance.jpg",
     desc:"Comprehensive structuring and financing solutions for infrastructure, energy, and development projects from concept through commissioning.",
   },
  {

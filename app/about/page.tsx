@@ -30,7 +30,7 @@ export default function AboutPage() {
         title="We Build Businesses That"
         titleEm="Deliver Lasting Value"
         subtitle="JCS Investments Limited is Accra's leading sustainable investment firm, combining rigorous financial discipline with a deep commitment to environmental and social impact since 2004."
-        image="https://images.unsplash.com/photo-1560472355-536de3962603?w=1800&q=85&auto=format"
+        image="/images/green-wallet.png"
         imageAlt="JCS team meeting"
         cta={{ label:"Meet Our Team", href:"/team" }}
       />

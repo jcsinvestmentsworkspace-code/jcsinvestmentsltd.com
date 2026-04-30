@@ -21,9 +21,9 @@ export default function Page() {
       { val:"20+",   label:"Years Experience" },
     ]}
     related={[
-      { title:"Project Financing", href:"/businesses/project-financing", img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80" },
+      { title:"Project Financing", href:"/businesses/project-financing", img:"/images/project-finance.jpg" },
       { title:"SenHub", href:"/businesses/SenHub", img:"/images/SenHub.jpg" },
-      { title:"Gender Lens", href:"/businesses/gender-lens-investing", img:"https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80" },
+      { title:"Gender Lens", href:"/businesses/gender-lens-investing", img:"public/images/gender-lens.jpg" },
     ]}
   />;
 }

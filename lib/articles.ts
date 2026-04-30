@@ -9,9 +9,9 @@ export const ARTICLES = [
     imgHero: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1800&q=85&auto=format",
     excerpt: "The winds of change are blowing across West Africa's coastline. JCS Investments is at the forefront of a new wave of clean energy investment...",
     featured: true,
-    author: "Kweku Asante-Dua",
-    authorRole: "Head of Energy & Infrastructure",
-    authorImg: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80",
+    author: "Grace Naah",
+    authorRole: "Principal Administrator",
+    authorImg: "",
     body: [
       {
         type: "intro",
@@ -71,13 +71,13 @@ export const ARTICLES = [
     title: "Turning Waste Into Wealth: The Investment Case for Ghana's Circular Economy",
     date: "February 2026",
     read: "5 min read",
-    img: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1200&q=85&auto=format",
+    img: "/images/circular-economy.jpg",
     imgHero: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=1800&q=85&auto=format",
     excerpt: "Ghana generates 15,000 tonnes of solid waste every day. For JCS Investments, this represents not a problem but an extraordinary investment opportunity...",
     featured: false,
-    author: "Adwoa Frimpong",
+    author: "Elizabeth Ayim",
     authorRole: "Head of Circular Economy & Sustainability",
-    authorImg: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&q=80",
+    authorImg: "/images/Ms-Lizy.jpg",
     body: [
       {
         type: "intro",
@@ -205,7 +205,7 @@ export const ARTICLES = [
     featured: false,
     author: "Patricia Safo",
     authorRole: "Founder & CEO",
-    authorImg: "/images/Patricia-Safo.jpg",
+    authorImg: "/images/Patricia-MD.jpeg",
     body: [
       {
         type: "intro",
@@ -311,9 +311,9 @@ export const ARTICLES = [
     imgHero: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1800&q=85&auto=format",
     excerpt: "Mobile penetration, a young population, and an underbanked majority are creating the perfect conditions for Africa's fintech revolution...",
     featured: false,
-    author: "Emmanuel Tetteh-Boateng",
+    author: "William Hunt",
     authorRole: "Head of Technology Investments",
-    authorImg: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    authorImg: "/images/William.jpeg",
     body: [
       {
         type: "intro",
@@ -361,13 +361,13 @@ export const ARTICLES = [
     title: "The Solar Mini-Grid Revolution: Electrifying Rural Ghana",
     date: "September 2025",
     read: "6 min read",
-    img: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=85&auto=format",
-    imgHero: "https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1800&q=85&auto=format",
+    img: "/images/RenewableEnergy.jpg",
+    imgHero: "/images/RenewableEnergy.jpg",
     excerpt: "Off-grid solar mini-grids are proving to be one of the most powerful tools for rural electrification — and one of the best investments on the continent...",
     featured: false,
-    author: "Kweku Asante-Dua",
+    author: "Elizabeth Ayim",
     authorRole: "Head of Energy & Infrastructure",
-    authorImg: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&q=80",
+    authorImg: "/images/Ms-Lizy.jpg",
     body: [
       {
         type: "intro",
@@ -411,13 +411,13 @@ export const ARTICLES = [
     title: "Gender Lens Investing: How JCS Is Backing Women-Led Businesses",
     date: "August 2025",
     read: "4 min read",
-    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1200&q=85&auto=format",
-    imgHero: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=1800&q=85&auto=format",
+    img: "/images/gender-lens.jpg",
+    imgHero: "/images/gender-lens.jpg",
     excerpt: "Investing in women-led businesses isn't just the right thing to do — it consistently delivers better risk-adjusted returns. Here's the evidence...",
     featured: false,
     author: "Patricia Safo - Chief Executive Officer [CEO] of JCS Investments",
     authorRole: "Chief Financial Officer",
-    authorImg: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80",
+    authorImg: "/images/Patricia-MD.jpeg",
     body: [
       {
         type: "intro",

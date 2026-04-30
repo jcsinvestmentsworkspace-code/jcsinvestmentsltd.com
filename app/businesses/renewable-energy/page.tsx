@@ -21,9 +21,9 @@ export default function Page() {
       { val:"15+",   label:"Projects Delivered" },
     ]}
     related={[
-      { title:"Circular Economy", href:"/businesses/circular-economy", img:"https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=500&q=80" },
-      { title:"Project Financing", href:"/businesses/project-financing", img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&q=80" },
-      { title:"Gender Lens", href:"/businesses/gender-lens", img:"https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=500&q=80" },
+      { title:"Circular Economy", href:"/businesses/circular-economy", img:"/images/circular-economy.jpg" },
+      { title:"Project Financing", href:"/businesses/project-financing", img:"/images/project-finance.jpg" },
+      { title:"Gender Lens", href:"/businesses/gender-lens", img:"/images/gender-lens.jpg" },
     ]}
   />;
 }

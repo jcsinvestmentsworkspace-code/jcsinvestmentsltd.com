@@ -7,7 +7,7 @@ import Link from "next/link";
 const LEADERSHIP = [
   {
     name:"Patricia Safo", role:"Founder & Chief Executive Officer",
-    img:"/images/Patricia-Safo.jpg",
+    img:"/images/Patricia-MD.jpeg",
     bio:"Patricia founded JCS Investments in 2004 with a conviction that Africa's greatest resource is its untapped investment potential. With 25 years of experience spanning investment banking, development finance, and entrepreneurship, he leads the firm's overall strategy and vision.",
     quote:"We invest not just for returns, but for the Africa we want to leave behind.",
   },
@@ -20,20 +20,20 @@ const LEADERSHIP = [
   },
   {
     name:"Mary Asantewaa Boateng", role:"Head Of Accounts Management",
-    img:"/images/Ms-Mary.jpg",
+    img:"/images/Ms-MaryAI.jpeg",
     bio:"Mary brings 18 years of finance and accounting expertise, having previously led treasury operations at a leading pan-African bank. She oversees all financial operations, investor reporting, and fund administration at JCS Investments.",
     quote:"Sustainable returns aren't a trade-off — they're the future of finance.",
   },
  
   {
     name:"Grace Naah", role:"Principal Administrator",
-    img:"/images/Ms-Grace.jpg",
+    img:"/images/Ms-GraceAI.jpeg",
     bio:"Grace leads the firm's financial advisory practice, serving institutional investors, family offices, and high net-worth clients. She holds an MBA from INSEAD and brings 15 years of experience in investment management and wealth planning.",
     quote:"Every client's story is different. We listen first, then we build.",
   },
   {
     name:"Ms.Elizabeth Ayim", role:"Head of Circular Economy & Sustainability",
-    img:"/images/Ms-Lizy.jpg",
+    img:"/images/Ms-LizyAI.jpeg",
     bio:"Elizabeth leads JCS's circular economy investments and the firm's ESG integration programme. She previously worked with the Ellen MacArthur Foundation and holds a PhD in Environmental Economics from the University of Ghana.",
     quote:"The circular economy isn't just good for the planet — it's one of the best investments on Earth.",
   },

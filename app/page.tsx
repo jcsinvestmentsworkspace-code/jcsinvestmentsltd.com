@@ -41,9 +41,9 @@ const STATS = [
 const BUSINESSES = [
   { num:"01", tag:"Energy",       title:"Renewable Energy",    href:"/businesses/renewable-energy",   img:"/images/RenewableEnergy.jpg",  desc:"Solar, wind, and clean energy infrastructure across West Africa." },
   { num:"02", tag:"Sustainability",title:"Circular Economy",  href:"/businesses/circular-economy",   img:"/images/sustainability.jpg",  desc:"Transforming waste into wealth through innovative recycling solutions." },
-  { num:"03", tag:"Advisory",     title:"Financial Advisory",  href:"/businesses/financial-advisory", img:"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=700&q=80&auto=format",  desc:"Strategic counsel and portfolio optimisation for institutional and individual investors." },
+  { num:"03", tag:"Advisory",     title:"Financial Advisory",  href:"/businesses/financial-advisory", img:"/images/financial-advisory.jpg",  desc:"Strategic counsel and portfolio optimisation for institutional and individual investors." },
   { num:"04", tag:"SenHub",       title:"SenHub",             href:"/businesses/SenHub",              img:"/images/SenHub.jpg",  desc:"Sustainable urban development and commercial property investments." },
-  { num:"05", tag:"Finance",      title:"Project Financing",   href:"/businesses/project-financing",  img:"https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&q=80&auto=format",  desc:"End-to-end structuring and financing for large-scale infrastructure." },
+  { num:"05", tag:"Finance",      title:"Project Financing",   href:"/businesses/project-financing",  img:"/images/project-finance.jpg",  desc:"End-to-end structuring and financing for large-scale infrastructure." },
  {
   num:"06",
   tag:"Gender Lens",
