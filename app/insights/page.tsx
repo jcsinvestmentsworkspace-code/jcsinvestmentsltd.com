@@ -3,7 +3,6 @@ import { useState } from "react";
 import PageHero from "@/components/PageHero";
 import FadeUp from "@/components/FadeUp";
 import Link from "next/link";
-import emailjs from "@emailjs/browser";
 import { ARTICLES } from "@/lib/articles";
 
 const GREEN = "#1F7A5A";
@@ -30,21 +29,35 @@ export default function InsightsPage() {
 
   const form = e.currentTarget;
 
-  try {
-    await emailjs.sendForm(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      process.env.NEXT_PUBLIC_EMAILJS_NEWSLETTER_TEMPLATE_ID!,
-      form,
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
-    );
+try {
+  const formData = new FormData(form);
 
+  formData.append(
+    "access_key",
+    process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || ""
+  );
+
+  formData.append("subject", "New Newsletter Subscription");
+
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    body: formData,
+  });
+
+  const result = await response.json();
+
+  if (result.success) {
     alert("Subscribed successfully ✅");
     form.reset();
-  } catch (error) {
-    console.error("Newsletter error:", error);
+  } else {
+    console.error("Newsletter error:", result);
     alert("Subscription failed ❌");
   }
-};
+
+} catch (error) {
+  console.error("Newsletter error:", error);
+  alert("Subscription failed ❌");
+}
 
   return (
     <>
@@ -359,4 +372,5 @@ export default function InsightsPage() {
 </section>
 </>
 );
+}
 }
