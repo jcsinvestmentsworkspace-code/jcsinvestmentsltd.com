@@ -119,7 +119,7 @@ export default function CareersPage() {
             <div style={{ fontFamily:"var(--font-display)", fontSize:"clamp(1.6rem,3vw,2.4rem)", fontStyle:"italic", fontWeight:300, lineHeight:1.4, marginBottom:"1.5rem" }}>
               &ldquo;To work at JCS Investments means being at the forefront of Africa's most important economic transformation. The work is hard, meaningful, and genuinely exciting every single day.&rdquo;
             </div>
-            <div style={{ fontSize:"0.85rem", fontWeight:600, letterSpacing:"0.06em", color:"rgba(255,255,255,0.8)" }}>Jonathan C. Sarpong — Founder & CEO</div>
+            <div style={{ fontSize:"0.85rem", fontWeight:600, letterSpacing:"0.06em", color:"rgba(255,255,255,0.8)" }}>Patricia Safo — Founder & CEO</div>
           </FadeUp>
         </div>
       </section>

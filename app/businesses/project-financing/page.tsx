@@ -23,7 +23,7 @@ export default function Page() {
     related={[
       { title:"Renewable Energy", href:"/businesses/renewable-energy", img:"/images/RenewableEnergy.jpg" },
       { title:"SenHub", href:"/businesses/SenHub", img:"/images/SenHub.jpg" },
-      { title:"Financial Advisory", href:"/businesses/financial-advisory", img:"https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80" },
+      { title:"Financial Advisory", href:"/businesses/financial-advisory", img:"/images/financial-advisory.jpg" },
     ]}
   />;
 }

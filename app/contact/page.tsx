@@ -2,7 +2,6 @@
 import { useState, useRef } from "react";
 import { useInView } from "react-intersection-observer";
 import Link from "next/link";
- //import emailjs from "@emailjs/browser";
 import FadeUp from "@/components/FadeUp";
 
 const GREEN = "#1F7A5A";
