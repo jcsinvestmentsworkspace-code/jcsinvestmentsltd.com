@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 import PageHero from "@/components/PageHero";
 import FadeUp from "@/components/FadeUp";
 import Link from "next/link";
@@ -65,8 +65,8 @@ export default function TeamPage() {
         cta={{ label:"Join Our Team", href:"/careers" }}
       />
 
-      {/* Leadership grid */}
-      <section className="section-pad" style={{ background:"var(--dark2)" }}>
+     */ {/* Leadership grid */}
+      /*<section className="section-pad" style={{ background:"var(--dark2)" }}>
         <div className="container">
           <FadeUp style={{ maxWidth:580, marginBottom:"3.5rem" }}>
             <div className="section-label">Leadership Team</div>
@@ -98,9 +98,10 @@ export default function TeamPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/
 
-      {/* Culture */}
+      //{/* Culture */}
+     /* 
       <section className="section-pad" style={{ background:"var(--dark)" }}>
         <div className="container">
           <FadeUp style={{ textAlign:"center", maxWidth:600, margin:"0 auto 3.5rem" }}>
@@ -124,9 +125,9 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-
-      {/* Join CTA */}
-      <section className="section-pad" style={{ background:"var(--dark3)", textAlign:"center" }}>
+*/
+      //{/* Join CTA */}
+      /* <section className="section-pad" style={{ background:"var(--dark3)", textAlign:"center" }}>
         <div className="container">
           <FadeUp>
             <h2 className="section-title">Want to Join the <em>JCS Family?</em></h2>
@@ -139,5 +140,31 @@ export default function TeamPage() {
         </div>
       </section>
     </>
+  );
+}
+*/
+
+export default function TeamPage() {
+  return (
+    <div
+      style={{
+        minHeight: "70vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        padding: "40px",
+      }}
+    >
+      <h1 style={{ fontSize: "3rem", marginBottom: "20px" }}>
+        Team Page Under Review
+      </h1>
+
+      <p style={{ maxWidth: "600px", lineHeight: 1.7 }}>
+        We are currently updating our team information to ensure accuracy and
+        transparency. Please check back soon.
+      </p>
+    </div>
   );
 }
