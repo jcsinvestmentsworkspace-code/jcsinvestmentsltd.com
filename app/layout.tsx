@@ -7,6 +7,9 @@ import CookieBanner from "@/components/CookieBanner";
 export const metadata: Metadata = {
   title: "JCS Investments Limited — Building Sustainable Futures",
   description: "Africa's premier sustainable investment firm deploying strategic capital in renewable energy, circular economy, and high-impact financial solutions across emerging markets.",
+  verification: {
+    google: "w3Ju5wMLiogpdnPSGyl7HnAUapVYHBuvqZnl",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
