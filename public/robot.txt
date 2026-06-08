@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /meritking
+Disallow: /investments-3
+Disallow: /jcs-journal
+Disallow: /october-2020
+Disallow: /momo-transactions-exceeds-all
+Disallow: /elizabeth-ayim-16
+
+Sitemap: https://jcs.com.gh/sitemap.xml
