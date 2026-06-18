@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import Ticker from "@/components/Ticker";
+import JCSCardShowcase from "@/components/JCSCardShowcase.tsx";
 
 const SLIDES = [
   {
@@ -44,35 +45,35 @@ const BUSINESSES = [
   { num:"03", tag:"Advisory",     title:"Financial Advisory",  href:"/businesses/financial-advisory", img:"/images/financial-advisory.jpg",  desc:"Strategic counsel and portfolio optimisation for institutional and individual investors." },
   { num:"04", tag:"SenHub",       title:"SenHub",             href:"/businesses/SenHub",              img:"/images/SenHub.jpg",  desc:"Sustainable urban development and commercial property investments." },
   { num:"05", tag:"Finance",      title:"Project Financing",   href:"/businesses/project-financing",  img:"/images/project-finance.jpg",  desc:"End-to-end structuring and financing for large-scale infrastructure." },
- {
-  num:"06",
-  tag:"Gender Lens",
-  title:"Gender Lens Investment",
-  href:"/businesses/gender-lens-investing",
-  img:"/images/gender-lens.jpg",
-  desc:"Driving inclusive growth by investing in women-owned businesses and advancing gender equity through sustainable, impact-focused investment strategies.",
-},
+  {
+    num:"06",
+    tag:"Gender Lens",
+    title:"Gender Lens Investment",
+    href:"/businesses/gender-lens-investing",
+    img:"/images/gender-lens.jpg",
+    desc:"Driving inclusive growth by investing in women-owned businesses and advancing gender equity through sustainable, impact-focused investment strategies.",
+  },
 ];
 
 const INSIGHTS = [
   { cat:"Renewable Energy", title:"West Africa's Wind Energy Revolution",                       date:"March 2026",    img:"/images/RenewableEnergy.jpg",  featured:true },
   { cat:"Circular Economy", title:"Turning Waste Into Wealth: Ghana's Circular Economy",        date:"Feb 2026",      img:"/images/sustainability.jpg",  featured:false },
-{
-  slug: "africa-investment-outlook-2026",
-  cat: "Advisory",
-  title: "2026 Africa Investment Outlook",
-  date: "Jan 2026",
-  img: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80&auto=format",
-  featured: false,
-},
-{
-  slug: "patient-capital-reshaping-west-africa",
-  cat: "Impact",
-  title: "Patient Capital Reshaping West Africa",
-  date: "Dec 2025",
-  img: "https://images.unsplash.com/photo-1560472355-536de3962603?w=500&q=80&auto=format",
-  featured: false,
-},
+  {
+    slug: "africa-investment-outlook-2026",
+    cat: "Advisory",
+    title: "2026 Africa Investment Outlook",
+    date: "Jan 2026",
+    img: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&q=80&auto=format",
+    featured: false,
+  },
+  {
+    slug: "patient-capital-reshaping-west-africa",
+    cat: "Impact",
+    title: "Patient Capital Reshaping West Africa",
+    date: "Dec 2025",
+    img: "https://images.unsplash.com/photo-1560472355-536de3962603?w=500&q=80&auto=format",
+    featured: false,
+  },
 ];
 
 export default function HomePage() {
@@ -172,24 +173,20 @@ export default function HomePage() {
       <section className="section-pad" style={{ background:"var(--dark2)" }}>
         <div className="container">
           <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit,minmax(300px,1fr))", gap:"4rem", alignItems:"center" }}>
+
+            {/* ── CARD SHOWCASE (replaces green-card image) ── */}
             <FadeUp direction="left">
-              <div style={{ position:"relative" }}>
-                <img src="/images/green-card.jpeg"
-                  alt="JCS Investments team"
-                  style={{ width:"100%", height:"clamp(300px,50vw,520px)", objectFit:"cover", borderRadius:4, display:"block" }}/>
-                <div style={{
-                  position:"absolute", bottom:-24, left:-24,
-                  background:"var(--dark)", border:"1px solid var(--border)", borderRadius:12,
-                  padding:"1.2rem 1.5rem", display:"flex", alignItems:"center", gap:14,
-                }}>
-                  <div style={{ width:44, height:44, background:"var(--g)", borderRadius:10, display:"flex", alignItems:"center", justifyContent:"center", fontSize:"1.3rem" }}>🏆</div>
-                  <div>
-                    <strong style={{ display:"block", fontSize:"1.5rem", lineHeight:1 }}>20+</strong>
-                    <span style={{ fontSize:"0.75rem", color:"var(--muted)" }}>Years of Excellence</span>
-                  </div>
-                </div>
+              <div style={{
+                display:"flex",
+                flexDirection:"column",
+                alignItems:"center",
+                justifyContent:"center",
+                padding:"3rem 1rem 2rem",
+              }}>
+                <JCSCardShowcase />
               </div>
             </FadeUp>
+
             <FadeUp direction="right">
               <div className="section-label">About JCS Investments</div>
               <h2 className="section-title">We Build Businesses That <em>Deliver Lasting Value</em></h2>
@@ -291,7 +288,6 @@ export default function HomePage() {
             <FadeUp direction="right">
               <div style={{ display:"flex", flexDirection:"column", gap:"2rem" }}>
                 {[
-                  //{ val:"$10M+", desc:"Total capital deployed across renewable energy, real estate, and advisory mandates" },
                   { val:"500+",  desc:"Projects successfully delivered spanning 8 sectors across West Africa" },
                   { val:"50K+",  desc:"Lives directly impacted through energy access, jobs, and community programmes" },
                   { val:"98%",   desc:"Client satisfaction rate — the highest in our 20-year history" },
