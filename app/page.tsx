@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import FadeUp from "@/components/FadeUp";
 import Ticker from "@/components/Ticker";
-import JCSCardShowcase from "@/components/JCSCardShowcase.tsx";
+import JCSCardShowcase from "@/components/JCSCardShowcase";
 
 const SLIDES = [
   {
