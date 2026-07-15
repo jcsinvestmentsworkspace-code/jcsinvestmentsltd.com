@@ -14,12 +14,12 @@ const VALUES = [
 ];
 
 const MILESTONES = [
-  { year:"2004", event:"JCS Investments founded in Accra by Jonathan C. Sarpong with a vision to democratise access to high-impact investments." },
-  { year:"2008", event:"First major renewable energy project — a 200kW solar installation powering 500 homes in the Eastern Region." },
-  { year:"2012", event:"Launched financial advisory division, serving our first institutional client — a pension fund with $5M in assets." },
-  { year:"2016", event:"Expanded into circular economy investments, pioneering Ghana's first integrated waste-to-energy facility." },
-  { year:"2019", event:"Crossed $5M in total capital deployed. Named one of Ghana's Top 20 Investment Firms by the Ghana Investment Council." },
-  { year:"2024", event:"Surpassed 500 projects completed and 50,000 lives impacted. Launched Technology & Innovation division." },
+  { year:"2004", event:"JCS Investments founded in Accra by Patricia Safo with a vision to democratise access to high-impact investments." },
+  { year:"2008", event:"Expanded investment services. — Increased support for startups - Promoted financial literacy. - Strengthened strategic partnerships." },
+  { year:"2012", event:"Began integrating sustainability into investments. - Supported environmentally responsible businesses. — Increased community engagement. - Strengthened corporate governance." },
+  { year:"2016", event:"Diversified investment portfolio. - Introduced innovative investment strategies. - Increased infrastructure and development financing. - Supported youth entrepreneurship." },
+  { year:"2019", event:"Supported businesses during economic uncertainty. -Promoted ESG (Environmental, Social & Governance). - Expanded sustainable finance initiatives." },
+  { year:"2024", event:"Positioned sustainability as a driver of economic growth. - Connected investors with future-focused opportunities." },
 ];
 
 export default function AboutPage() {
