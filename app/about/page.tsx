@@ -19,7 +19,7 @@ const MILESTONES = [
   { year:"2012", event:"Began integrating sustainability into investments. - Supported environmentally responsible businesses. — Increased community engagement. - Strengthened corporate governance." },
   { year:"2016", event:"Diversified investment portfolio. - Introduced innovative investment strategies. - Increased infrastructure and development financing. - Supported youth entrepreneurship." },
   { year:"2019", event:"Supported businesses during economic uncertainty. -Promoted ESG (Environmental, Social & Governance). - Expanded sustainable finance initiatives." },
-  { year:"2024", event:"Positioned sustainability as a driver of economic growth. - Connected investors with future-focused opportunities." },
+  { year:"2024", event:"Positioned sustainability as a driver of economic growth. - Connected investors with future-focused opportunities. - " },
 ];
 
 export default function AboutPage() {
@@ -43,8 +43,7 @@ export default function AboutPage() {
               <div className="section-label">Our Mission</div>
               <h2 className="section-title">Investing in Growth. <em>Building Sustainable Futures.</em></h2>
               <p className="section-body" style={{ marginBottom:"1.2rem" }}>
-                At JCS Investments, our mission is to deliver exceptional risk-adjusted returns to our investors while building businesses and infrastructure that create lasting positive impact across Africa.
-              </p>
+              Our mission is to transform businesses into sustainable enterprises through our investments — advancing social equity, strengthening accountability across supply chains and building resilience for future generations.              </p>
               <p className="section-body">
                 We believe that financial performance and social responsibility are not trade-offs — they are two sides of the same coin. The businesses we back are built to last, and so are the communities they serve.
               </p>
@@ -53,8 +52,7 @@ export default function AboutPage() {
               <div className="section-label">Our Vision</div>
               <h2 className="section-title">Africa's Most <em>Trusted</em> Investment Partner</h2>
               <p className="section-body" style={{ marginBottom:"1.2rem" }}>
-                We envision an Africa where every person has access to clean energy, circular economic systems, and sound financial services — powered by a new generation of patient, purposeful capital.
-              </p>
+                A future where business, social equity, and environmental stewardship are inseparable.              </p>
               <p className="section-body">
                 JCS Investments exists to be the bridge between global capital and Africa's greatest opportunities — earning the trust of investors and communities alike, one investment at a time.
               </p>

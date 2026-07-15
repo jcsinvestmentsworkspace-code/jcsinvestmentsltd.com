@@ -15,11 +15,11 @@ export default function Page() {
       { icon:"📈", title:"Carbon Credits & ESG", desc:"Structuring carbon offset programmes to generate additional revenue streams and ESG credentials for portfolio companies." },
     ]}
     stats={[
-      { val:"2.4MW", label:"Clean Capacity" },
-      { val:"12K+",  label:"CO₂ Tonnes Avoided" },
-      { val:"8K+",   label:"Homes Powered" },
-      { val:"15+",   label:"Projects Delivered" },
-    ]}
+  { val: "2004", label: "Founded" },
+  { val: "22+", label: "Years of Experience" },
+  { val: "ESG", label: "Investment Philosophy" },
+  { val: "Global", label: "Strategic Partnerships" },
+]}
     related={[
       { title:"Circular Economy", href:"/businesses/circular-economy", img:"/images/circular-economy.jpg" },
       { title:"Project Financing", href:"/businesses/project-financing", img:"/images/project-finance.jpg" },

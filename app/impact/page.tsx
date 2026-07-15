@@ -13,11 +13,15 @@ const IMPACT_AREAS = [
     img:"/images/bus-stop.jpeg",
   },
   {
-    id:"green", icon:"🌿",
-    title:"Green Infrastructure",
-    desc:"From solar farms to green buildings, our infrastructure investments are setting new standards for environmental performance across West Africa, proving that sustainable development is also sound investing.",
-    stats:[{ val:"2.4MW", label:"Clean Energy" },{ val:"12K+", label:"CO₂ Tonnes Avoided" }],
-    img:"/images/green-card.jpeg",
+   id: "green",
+icon: "🌿",
+title: "Green Infrastructure",
+desc: "We champion investments that accelerate the transition to a sustainable future. By supporting renewable energy, green infrastructure, and climate-focused initiatives, JCS Investments creates pathways for responsible capital deployment and long-term value creation.",
+stats: [
+  { val: "Climate", label: "Investment Opportunities" },
+  { val: "Future", label: "Infrastructure Vision" }
+],
+img: "/images/green-card.jpeg",
   },
   {
     id:"inclusion", icon:"💳",
@@ -62,7 +66,8 @@ export default function ImpactPage() {
               { val:"50K+",  label:"Lives Impacted" },
               { val:"3.2K",  label:"Jobs Created" },
               { val:"2.4MW", label:"Clean Energy" },
-              { val:"12K+",  label:"CO₂ Tonnes Avoided" },
+              { val: "ESG", label: "Investment Philosophy" },
+              { val: "Global", label: "Strategic Partnerships" },
               { val:"98%",   label:"Client Satisfaction" },
               { val:"20+",   label:"Years of Excellence" },
             ].map((s, i) => (

@@ -310,10 +310,11 @@ try {
           <FadeUp direction="right">
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1rem" }}>
               {[
-                { val: "12K+", label: "CO₂ Tonnes Avoided" },
-                { val: "3.2K", label: "Jobs Created" },
-                { val: "85%",  label: "Portfolio ESG Rated" },
-                { val: "40%+", label: "Women-Led Portfolio" },
+                { val: "2004",        label: "Established" },
+  { val: "22+",         label: "Years of Experience" },
+  { val: "ESG",         label: "Investment Framework" },
+  { val: "Renewables",  label: "Strategic Focus" },
+  { val: "Global",      label: "Partnership Vision" },
               ].map(s => (
                 <div key={s.label} style={{ padding: "1.5rem", background: "rgba(255,255,255,0.12)", borderRadius: 12, border: "1px solid rgba(255,255,255,0.2)", textAlign: "center" }}>
                   <div style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: 600, color: "#fff", lineHeight: 1, marginBottom: "0.3rem" }}>{s.val}</div>

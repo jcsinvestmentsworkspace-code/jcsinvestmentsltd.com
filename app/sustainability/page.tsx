@@ -14,12 +14,12 @@ const COMMITMENTS = [
 ];
 
 const STATS = [
-  { val:"2.4MW", label:"Clean Energy Capacity" },
-  { val:"12K+",  label:"Tonnes CO₂ Avoided" },
-  { val:"3.2K",  label:"Green Jobs Created" },
-  { val:"85%",   label:"Portfolio ESG Rated" },
-  { val:"8K+",   label:"Tonnes Waste Diverted" },
-  { val:"40%+",  label:"Women-Led Portfolio" },
+  { val: "Investment",      label: "Advisory Services" },
+  { val: "Renewables",      label: "Investment Sector" },
+  { val: "Carbon Markets",  label: "Emerging Focus" },
+  { val: "ESG",             label: "Sustainability Strategy" },
+  { val: "Partnerships",    label: "Growth Model" },
+  { val: "Innovation",      label: "Driving Progress" },
 ];
 
 export default function SustainabilityPage() {
